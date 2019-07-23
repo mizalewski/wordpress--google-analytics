@@ -22,7 +22,7 @@ function google_analytics_settings_api_init()
     add_settings_section(
         'eg_setting_section',
         'Google Analytics',
-        'eg_setting_section_callback_function',
+        'google_analytics_setting_section_callback_function',
         'general'
     );
 
@@ -44,7 +44,7 @@ function google_analytics_wp_footer()
     echo '<script async src="https://www.googletagmanager.com/gtag/js?id=' . $googleAnalyticsId . '"></script>' . "<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '" . $googleAnalyticsId . "');</script>";
 }
 
-function eg_setting_section_callback_function()
+function google_analytics_setting_section_callback_function()
 {
 }
 
